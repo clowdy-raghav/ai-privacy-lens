@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "title" : "introduction",
+        "messages" : [
+            {
+                "role" : "user",
+                "content" : "Hello! Im Harry Stephens, from gateway street, london, Uk. I am a first year college student persuing Bachelor's in Arts from university of Berley."
+            },
+            {
+                "role" : "karrenAI",
+                "content" : "Hello there Harry! How are you doing today?"
+            },
+            {
+                "role" : "user",
+                "content" : "Nothing much, just working on my weekly assignment of mathematics."
+            }
+        ]
+    },
+    {
+        "id" : 2,
+        "title" : "assignment help",
+        "messages" : [
+            {
+                "role" : "user",
+                "content" : "Hey karren, can you please help me with my assignment?"
+            },
+            {
+                "role" : "karrenAI",
+                "content" : "Sure, what subject assignment are you doing?"
+            },
+            {
+                "role" : "user",
+                "content" : "Its on 'Delhi through the ages'."
+            }
+        ]
+    },
+    {
+        "id" : 3,
+        "title" : "emotinal story",
+        "messages" : [
+            {
+                "role" : "user",
+                "content" : "You know karren, today i didnt have a great day."
+            },
+            {
+                "role" : "karrenAI",
+                "content" : "Im sorry to hear that. You can share to me anything that happened, maybe it will make you feel good."
+            },
+            {
+                "role" : "user",
+                "content" : "So what happened is today when i was coming back from college, a person standing by the metro station asked me for help. Apperantly he was in dire need of cash. so he asked me to pay him 200 pounds in cash in exchange of eMoney. So i did it and he showed me a fake screenshot of payment succession and in pressure i had to give him the cash. In his screen, it was apparant that the moeny was to sent to example@payment. But in reality, the screen was a fake edited screenshot. The money never came to me. I got scammed"
+            }
+        ]
+    },
+    {
+        "id" : 4,
+        "title" : "workout help",
+        "messages" : [
+            {
+                "role" : "user",
+                "content" : "Hey karren, can you please help me build a perfect workout routine for me?"
+            },
+            {
+                "role" : "karrenAI",
+                "content" : "Sure, what kind of workout are you looking for?"
+            },
+            {
+                "role" : "user",
+                "content" : "anything that you think suits my routine. I wake up at 6 am, get bathed until 8 am, eat oats in breakfast, go to college around 8:30 am return back to home until 6 pm, eat a snack,, do some homework, complete assigments, pplay some games, eat dinner then i go to bed at around 11 pm."
+            }
+        ]
+    }
+]
