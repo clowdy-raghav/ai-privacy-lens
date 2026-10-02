@@ -10,8 +10,7 @@ def analyze_conversations():
 
         numofMessages = 0
         numofConvo = len(conversations)
-        emails = []
-        phones = []
+        findings = []
 
         emailPattern = r"[\w\.-]+@[\w\.-]+\.\w+"
         phone_pattern = r"\b(?:\+91[-\s]?)?[6-9]\d{9}\b"
@@ -23,7 +22,8 @@ def analyze_conversations():
                 found_emails = re.findall(emailPattern, text)
 
                 for email in found_emails:
-                    emails.append({
+                    findings.append({
+                        "type": "email",
                         "value": email,
                         "conversation": conversation.get("title", "Untitled"),
                         "role": message["role"],
@@ -33,7 +33,8 @@ def analyze_conversations():
                 found_phones = re.findall(phone_pattern, text)
 
                 for phone in found_phones:
-                    phones.append({
+                    findings.append({
+                        "type": "phone",
                         "value": phone,
                         "conversation": conversation.get("title", "Untitled"),
                         "role": message["role"],
@@ -43,6 +44,5 @@ def analyze_conversations():
         return{
             "conversations":numofConvo,
             "messages":numofMessages,
-            "emails": emails,
-            "phones": phones
+            "findings": findings
         }   
