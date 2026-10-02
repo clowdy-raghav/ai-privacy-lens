@@ -13,7 +13,14 @@ def analyze_conversations():
         findings = []
 
         emailPattern = r"[\w\.-]+@[\w\.-]+\.\w+"
-        phone_pattern = r"\b(?:\+91[-\s]?)?[6-9]\d{9}\b"
+        phonePattern = r"\b(?:\+91[-\s]?)?[6-9]\d{9}\b"
+        namePatterns = [
+            r"\bmy name is ([A-Z][a-z]+)\b",
+            r"\bmy i am ([A-Z][a-z]+)\b",
+            r"\bmy im ([A-Z][a-z]+)\b",
+            r"\bmy i'm ([A-Z][a-z]+)\b",
+            r"\bmy call me ([A-Z][a-z]+)\b"
+        ]
 
         for conversation in conversations:
             for message in conversation["messages"]:
@@ -30,7 +37,7 @@ def analyze_conversations():
                         "evidence": text
                     })
                 
-                found_phones = re.findall(phone_pattern, text)
+                found_phones = re.findall(phonePattern, text)
 
                 for phone in found_phones:
                     findings.append({
@@ -40,6 +47,18 @@ def analyze_conversations():
                         "role": message["role"],
                         "evidence": text 
                     })
+                
+                for pattern in namePatterns:
+                    found_names = re.findall(pattern, text, re.IGNORECASE)
+
+                    for name in found_names:
+                        findings.append({
+                        "type": "name",
+                        "value": name,
+                        "conversation": conversation.get("title", "Untitled"),
+                        "role": message["role"],
+                        "evidence": text 
+                        })
 
         return{
             "conversations":numofConvo,
