@@ -13,7 +13,7 @@
         },
         {
           "role": "user",
-          "content": "I study at University of Delhi and I live in Delhi with my family."
+          "content": "I study at University of Delhi and I live in Delhi with my family. I live in Meerut and wake up at 6:30 every morning. I leave for college at 8 and have a long commute to Delhi."
         }
       ]
     },
@@ -269,5 +269,5 @@
         }
       ]
     }
-  ]
+]
   

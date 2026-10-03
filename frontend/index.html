@@ -2,12 +2,99 @@
 <html>
     <head>
         <title> AI Privacy Lens </title>
+        <p>
+            <strong>Privacy-fisrt:</strong>
+            Conversation analysis runs locally.
+            Rawconversation data is not uploaded to a cloudbase.
+        </p>
+        <style>
+
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 1100px;
+                margin: auto;
+                padding: 30px;
+                background: #f5f5f5;
+            }
+            
+            h1 {
+                margin-bottom: 5px;
+            }
+            
+            button {
+                padding: 9px 14px;
+                margin: 5px;
+                cursor: pointer;
+            }
+            
+            .profile-grid {
+                display: grid;
+                grid-template-columns:
+                    repeat(auto-fit, minmax(160px, 1fr));
+            
+                gap: 15px;
+                margin: 20px 0;
+            }
+            
+            .profile-card {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .profile-card span {
+                font-size: 28px;
+                font-weight: bold;
+            }
+            
+            .finding-card {
+                background: white;
+                padding: 20px;
+                margin: 15px 0;
+                border-radius: 10px;
+            
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            }
+            
+            .finding-header {
+                display: flex;
+                justify-content: space-between;
+            }
+            .deleted-finding {
+                opacity: 0.45;
+                background: #ffe5e5;
+                border: 2px solid #dc3545;
+            }
+
+            blockquote {
+                margin-left: 0;
+                padding: 10px;
+                background: #f0f0f0;
+                border-left: 4px solid #888;
+            }
+            
+            </style>
     </head>
     <body>
         <h1>AI Privacy Lens</h1>
 
-        <p> Understand your digital AI footprint. </p>
+        <p>
+            <strong>
+                Discover → Explain → Control your AI privacy footprint.
+            </strong>
+        </p>
 
+        <h2>Import AI Conversation History</h2>
+        <input type="file" id="fileInput" accept=".json"><br>
+
+        <button id="uploadButton"> Import Conversations</button>
+        <p id="uploadStatus"></p>
+        <hr>
         <button id="analyzeButton"> <b> Analyze Conversations </b></button>
 
         <div id="result"></div>
