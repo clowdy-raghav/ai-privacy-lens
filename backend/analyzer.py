@@ -193,7 +193,7 @@ def analyze_conversations():
             "conversations":numofConvo,
             "messages":numofMessages,
             "summary": summary,
+            "recurrence": recurrence,
             "findings": findings,
-            "finding_count": len(findings),
-            "recurrence": recurrence
+            "finding_count": len(findings)
         }   

@@ -1,74 +1,273 @@
 [
     {
-        "id" : 1,
-        "title" : "introduction",
-        "messages" : [
-            {
-                "role" : "user",
-                "content" : "Hello! I am Harry Stephens, from Ghaziabad, Uttar Pradesh. I am a first year college student persuing Bachelor's in Arts from University of Delhi."
-            },
-            {
-                "role" : "karrenAI",
-                "content" : "Hello there Harry! How are you doing today?"
-            },
-            {
-                "role" : "user",
-                "content" : "Nothing much, just working on my weekly assignment of mathematics."
-            }
-        ]
+      "id": 1,
+      "title": "college introduction",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hello Karren! My name is Harry and I am a first year student."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Nice to meet you, Harry! What are you studying?"
+        },
+        {
+          "role": "user",
+          "content": "I study at University of Delhi and I live in Delhi with my family."
+        }
+      ]
     },
     {
-        "id" : 2,
-        "title" : "assignment help",
-        "messages" : [
-            {
-                "role" : "user",
-                "content" : "Hey karren, can you please help me with my assignment?"
-            },
-            {
-                "role" : "karrenAI",
-                "content" : "Sure, what subject assignment are you doing?"
-            },
-            {
-                "role" : "user",
-                "content" : "Its on 'Delhi through the ages'. We have to submit the data to the email address submit@yahoo.com "
-            }
-        ]
+      "id": 2,
+      "title": "contact details",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Hey Karren, I need help writing an email."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure! What is the email about?"
+        },
+        {
+          "role": "user",
+          "content": "My name is Rahul and my contact email is rahul.sharma@example.com. You can use it as the example address."
+        }
+      ]
     },
     {
-        "id" : 3,
-        "title" : "emotinal story",
-        "messages" : [
-            {
-                "role" : "user",
-                "content" : "You know karren, today i didnt have a great day."
-            },
-            {
-                "role" : "karrenAI",
-                "content" : "Im sorry to hear that. You can share to me anything that happened, maybe it will make you feel good."
-            },
-            {
-                "role" : "user",
-                "content" : "So what happened is today when i was coming back from college, a person standing by the metro station asked me for help. Apperantly he was in dire need of cash. so he asked me to pay him 200 pounds in cash in exchange of eMoney. So i did it and he showed me a fake screenshot of payment succession and in pressure i had to give him the cash. In his screen, it was apparant that the moeny was to sent to example@payment.com . But in reality, the screen was a fake edited screenshot. The money never came to 6979230582. I got scammed"
-            }
-        ]
+      "id": 3,
+      "title": "phone number",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Karren, I'm filling out a college form and want to check whether my details look correct."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure, what details have you entered?"
+        },
+        {
+          "role": "user",
+          "content": "I am Priya and my phone number is 9876543210. I selected Meerut as my city."
+        }
+      ]
     },
     {
-        "id" : 4,
-        "title" : "workout help",
-        "messages" : [
-            {
-                "role" : "user",
-                "content" : "Hey karren, can you please help me build a perfect workout routine for me?"
-            },
-            {
-                "role" : "karrenAI",
-                "content" : "Sure, what kind of workout are you looking for?"
-            },
-            {
-                "role" : "user",
-                "content" : "anything that you think suits my routine. I wake up at 6 am, get bathed until 8 am, eat oats in breakfast, go to college around 8:30 am return back to home until 6 pm, eat a snack,, do some homework, complete assigments, pplay some games, eat dinner then i go to bed at around 11 pm."
-            }
-        ]
+      "id": 4,
+      "title": "college assignment",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can you help me with my history assignment?"
+        },
+        {
+          "role": "karrenAI",
+          "content": "Of course. What is the assignment about?"
+        },
+        {
+          "role": "user",
+          "content": "My name is Aman and the assignment is for my class at Shivaji College. I need to submit it tomorrow."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "meeting details",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Karren, can you help me prepare for a meeting?"
+        },
+        {
+          "role": "karrenAI",
+          "content": "Absolutely. What kind of meeting is it?"
+        },
+        {
+          "role": "user",
+          "content": "Call me Neha. I have a meeting at 3 PM with my project group in Noida."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "university project",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I have a project due next week and I'm worried about finishing it."
+        },
+        {
+          "role": "karrenAI",
+          "content": "What project are you working on?"
+        },
+        {
+          "role": "user",
+          "content": "I am Rohan and I'm doing my project at Delhi University. I usually work on it from home in Ghaziabad."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "event registration",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I need help registering for a student event."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure. What information does the registration form ask for?"
+        },
+        {
+          "role": "user",
+          "content": "It asks for my name, city and email. My name is Simran, I live in Gurgaon, and my email is simran23@example.com."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "internship application",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Karren, I am applying for an internship and need help improving my application."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure! What kind of internship are you applying for?"
+        },
+        {
+          "role": "user",
+          "content": "I am Vikram and I study computer science at IIT Delhi. I currently live in Delhi."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "delivery problem",
+      "messages": [
+        {
+          "role": "user",
+          "content": "My package hasn't arrived yet. Can you help me figure out what might have happened?"
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure. What information do you have about the delivery?"
+        },
+        {
+          "role": "user",
+          "content": "Call me Ankit. The delivery company has my phone number 9123456789 and the delivery location is Noida."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "travel planning",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm planning a trip and want some suggestions."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sounds good! Where are you travelling from?"
+        },
+        {
+          "role": "user",
+          "content": "My name is Kavya and I am travelling from Mumbai. My friend Arjun is coming with me."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "student club",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I joined a new student club today."
+        },
+        {
+          "role": "karrenAI",
+          "content": "That's great! What kind of club is it?"
+        },
+        {
+          "role": "user",
+          "content": "I am Sameer and it's a photography club at Shivaji College. Most of our activities happen around Delhi."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "online account",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Karren, I need help setting up an online account."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure. What are you having trouble with?"
+        },
+        {
+          "role": "user",
+          "content": "My name is Pooja. I used pooja.verma@example.com as my email and entered 8765432109 as my phone number."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "college admission",
+      "messages": [
+        {
+          "role": "user",
+          "content": "I'm confused about my college admission documents."
+        },
+        {
+          "role": "karrenAI",
+          "content": "I can help you make a checklist."
+        },
+        {
+          "role": "user",
+          "content": "Call me Mohit. I have been admitted to University of Delhi and my permanent home is in Meerut."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "friend introduction",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Karren, I want to introduce myself before joining a new online study group."
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure! What would you like to say?"
+        },
+        {
+          "role": "user",
+          "content": "I am Tanya. I study at Delhi University, live in Ghaziabad, and my email is tanya.study@example.com."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "contact form",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Can you check whether this contact form has all the information I need?"
+        },
+        {
+          "role": "karrenAI",
+          "content": "Sure, send me the details you're planning to enter."
+        },
+        {
+          "role": "user",
+          "content": "My name is Dev. I am currently living in Bangalore and studying at IIT Delhi. My contact number is +91 9988776655 and my email is dev.kumar@example.com."
+        }
+      ]
     }
-]
+  ]
+  
