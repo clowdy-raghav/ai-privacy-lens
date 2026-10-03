@@ -16,10 +16,8 @@ def analyze_conversations():
         phonePattern = r"\b(?:\+91[-\s]?)?[6-9]\d{9}\b"
         namePatterns = [
             r"\bmy name is ([A-Z][a-z]+)\b",
-            r"\bmy i am ([A-Z][a-z]+)\b",
-            r"\bmy im ([A-Z][a-z]+)\b",
-            r"\bmy i'm ([A-Z][a-z]+)\b",
-            r"\bmy call me ([A-Z][a-z]+)\b"
+            r"\bi am ([A-Z][a-z]+)\b",
+            r"\bcall me ([A-Z][a-z]+)\b"
         ]
 
         for conversation in conversations:
@@ -31,6 +29,7 @@ def analyze_conversations():
                 for email in found_emails:
                     findings.append({
                         "type": "email",
+                        "category": "contact",
                         "value": email,
                         "conversation": conversation.get("title", "Untitled"),
                         "role": message["role"],
@@ -42,6 +41,7 @@ def analyze_conversations():
                 for phone in found_phones:
                     findings.append({
                         "type": "phone",
+                        "category": "contact",
                         "value": phone,
                         "conversation": conversation.get("title", "Untitled"),
                         "role": message["role"],
@@ -54,7 +54,9 @@ def analyze_conversations():
                     for name in found_names:
                         findings.append({
                         "type": "name",
+                        "category": "identity",
                         "value": name,
+                        "confidence": "high",
                         "conversation": conversation.get("title", "Untitled"),
                         "role": message["role"],
                         "evidence": text 
@@ -63,5 +65,6 @@ def analyze_conversations():
         return{
             "conversations":numofConvo,
             "messages":numofMessages,
-            "findings": findings
+            "findings": findings,
+            "finding_count": len(findings)
         }   
